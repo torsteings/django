@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'v67b1+ww#a&e^-x8k6vn%py%*v=2tb_ncrc$isy=t6yqo@!7qb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -122,3 +122,7 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST_USER = 'ctbirdsas@gmail.com'
 EMAIL_HOST_PASSWORD = "ratzwfppycdpoukt"
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
