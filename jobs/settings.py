@@ -122,7 +122,3 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST_USER = 'ctbirdsas@gmail.com'
 EMAIL_HOST_PASSWORD = "ratzwfppycdpoukt"
-
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
